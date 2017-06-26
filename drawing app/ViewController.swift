@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     var lastPoint = CGPoint.zero
     var swiped = false
     
+    var red: CGFloat = 0.0
+    var green: CGFloat = 0.0
+    var blue: CGFloat = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -44,7 +48,7 @@ class ViewController: UIViewController {
         
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(5)
-        context?.setStrokeColor(red: 0, green: 0, blue: 0, alpha: 1.0)
+        context?.setStrokeColor(red: red, green: green, blue: blue, alpha: 1.0)
         context?.setBlendMode(CGBlendMode.normal)
         
         context?.strokePath()
@@ -83,12 +87,71 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func reset(_ sender: Any) {
+        
+        imageView.image = nil
+    }
+    
+    
+    @IBAction func seyyings(_ sender: Any) {
+    }
+    
+    @IBAction func save(_ sender: Any) {
+    }
     
     
     
+    // colours
     
     
+    
+    @IBAction func red(_ sender: Any) {
+        
+        (red, green, blue) = (0, 0, 0)
+    }
+    
+    
+    @IBAction func green(_ sender: Any) {
+        
+        (red, green, blue) = (0, 255, 0)
+    }
+    
+    
+    @IBAction func blue(_ sender: Any) {
+        
+        (red, green, blue) = (0, 0, 255)
+    }
     
 
+    @IBAction func yellow(_ sender: Any) {
+        
+        (red, green, blue) = (255, 255, 0)
+    }
+    
+    
+    @IBAction func pink(_ sender: Any) {
+        
+        (red, green, blue) = (255, 0, 255)
+    }
+    
+    
+    @IBAction func teal(_ sender: Any) {
+        
+        (red, green, blue) = (0, 255, 255)
+    }
+    
+    
+    @IBAction func white(_ sender: Any) {
+        
+        (red, green, blue) = (255, 255, 255)
+    }
+    
+    @IBAction func black(_ sender: Any) {
+        
+        (red, green, blue) = (0, 0, 0)
+    }
+    
+    
+    
 }
 

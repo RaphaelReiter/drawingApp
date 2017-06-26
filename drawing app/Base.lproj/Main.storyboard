@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,12 +25,117 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-FC-Jwf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TtZ-mB-Bhl">
+                                <rect key="frame" x="8" y="618" width="359" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QC-hV-F2I">
+                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="red"/>
+                                        <connections>
+                                            <action selector="red:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZj-oV-G9P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu8-Of-HJQ">
+                                        <rect key="frame" x="45.5" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="green"/>
+                                        <connections>
+                                            <action selector="green:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwa-9j-6Am"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-rU-kqC">
+                                        <rect key="frame" x="91" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="blue"/>
+                                        <connections>
+                                            <action selector="blue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="efZ-aQ-bsb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqW-OQ-UE6">
+                                        <rect key="frame" x="136.5" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="yellow"/>
+                                        <connections>
+                                            <action selector="yellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjF-et-GWS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHc-t5-dNO">
+                                        <rect key="frame" x="182" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="pink"/>
+                                        <connections>
+                                            <action selector="pink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dof-zY-qeh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMC-M2-yvt">
+                                        <rect key="frame" x="227.5" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="teal"/>
+                                        <connections>
+                                            <action selector="teal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cZA-7W-46B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ow-Vb-sGs">
+                                        <rect key="frame" x="273" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="white"/>
+                                        <connections>
+                                            <action selector="white:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Khp-RN-PQr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYA-p5-Jng">
+                                        <rect key="frame" x="318.5" y="0.0" width="40.5" height="41"/>
+                                        <state key="normal" title="Button" image="black"/>
+                                        <connections>
+                                            <action selector="black:" destination="BYZ-38-t0r" eventType="touchUpInside" id="El9-TV-9Zt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="SRl-Zu-vCS"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XB1-AO-Xhs">
+                                <rect key="frame" x="24" y="28" width="327" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITw-NR-NRe">
+                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ly-Jz-uE2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lo-hr-2cJ">
+                                        <rect key="frame" x="112.5" y="0.0" width="102" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="settings">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="seyyings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrI-un-2RV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R14-DA-aPm">
+                                        <rect key="frame" x="224.5" y="0.0" width="102.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="15"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gl5-Yg-72f"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TtZ-mB-Bhl" secondAttribute="trailing" constant="8" id="0IP-Tf-hPC"/>
                             <constraint firstAttribute="trailing" secondItem="WWj-FC-Jwf" secondAttribute="trailing" id="6p1-Vw-Doh"/>
+                            <constraint firstItem="XB1-AO-Xhs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FTj-pO-xUy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XB1-AO-Xhs" secondAttribute="trailing" constant="8" id="Hkd-NF-VBd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TtZ-mB-Bhl" secondAttribute="bottom" constant="8" id="I9g-WK-IcD"/>
                             <constraint firstItem="WWj-FC-Jwf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="M4Z-xz-liN"/>
+                            <constraint firstItem="XB1-AO-Xhs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="YKc-Jw-Sge"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WWj-FC-Jwf" secondAttribute="bottom" id="gGQ-60-5pj"/>
+                            <constraint firstItem="TtZ-mB-Bhl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="k6k-Fv-T7C"/>
                             <constraint firstItem="WWj-FC-Jwf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lSS-Uc-xQt"/>
                         </constraints>
                     </view>
@@ -39,7 +145,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="36"/>
+            <point key="canvasLocation" x="-439.19999999999999" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="black" width="100" height="100"/>
+        <image name="blue" width="100" height="100"/>
+        <image name="green" width="100" height="100"/>
+        <image name="pink" width="100" height="100"/>
+        <image name="red" width="100" height="100"/>
+        <image name="teal" width="100" height="100"/>
+        <image name="white" width="100" height="100"/>
+        <image name="yellow" width="100" height="100"/>
+    </resources>
 </document>
